@@ -1,12 +1,13 @@
 import React from "react";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
+import Body from "./Components/Body";
 
 const App = () => {
   return (
     <div>
       <Navbar/>
-      <h1>Bishal</h1>
+      <Body/>
       <Footer />
     </div>
   );
