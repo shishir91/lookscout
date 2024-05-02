@@ -75,13 +75,15 @@ const Message = () => {
         }
     };
 
+
+    
     return (
         <div className="flex items-center justify-center">
             <div className="w-full md:w-3/4 lg:w-1/2 xl:w-2/5 p-4">
                 <p className="font-inter text-lg text-blue-500 font-semibold tracking-tighter text-center mb-4">
                     Messaging for all
                 </p>
-                {renderContent()}
+                {renderContent()}     
             </div>
         </div>
     )
