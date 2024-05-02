@@ -1,11 +1,15 @@
 import React from "react";
-import Footer from "./components/Footer";
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
 
 const App = () => {
   return (
     <div>
-      <main>App</main>
+      <Navbar/>
+      <h1>Bishal</h1>
       <Footer />
     </div>
   );
 };
+
+export default App;
