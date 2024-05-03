@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Message from './Message';
+import Info from './Info';
 
 const Body = () => {
     const [screenSize, setScreenSize] = useState('desktop');
@@ -85,6 +86,7 @@ const Body = () => {
             </div>
 
             <Message />
+            <Info/>
         </>
     );
 };
