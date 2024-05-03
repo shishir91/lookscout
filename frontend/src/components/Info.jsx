@@ -5,7 +5,9 @@ import guy2 from '../Assests/image copy 9.png';
 import guy3 from '../Assests/image copy 10.png';
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+// import { FaSlack, FaGoogle, FaPaypal, FaPinterest, FaMailchimp } from 'react-icons/fa';
 import { FaSlack, FaGoogle, FaPaypal, FaPinterest, FaMailchimp } from 'react-icons/fa';
+import { SiTwilio } from "react-icons/si";
 
 const Info = () => {
 
@@ -266,37 +268,74 @@ const Info = () => {
 
             <div className="bg-blue-500 py-16">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-extrabold text-white text-center mb-8">
+                    <h2 className="text-sm font-semibold text-white text-center mb-8">
                         1% OF THE INDUSTRY
                     </h2>
-                    <p className="text-xl font-semibold text-white text-center mb-12">
-                        Welcome to your new digital reality that which will rock your world truly at all.
+                    <p className="text-4xl font-semibold text-white text-center mb-12">
+                        Welcome to your new digital reality that <br />which will rock your world truly at all.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center items-center mb-8">
-                        <button className="bg-white text-blue-500 font-semibold py-2 px-4 rounded-md mb-4 sm:mb-0 sm:mr-4 md:mr-0 md:mb-8">
+                        <button style={{
+                            width: "91px",
+                            height: "46px",
+                            padding: "12px 18px",
+                            gap: "6px",
+                            borderRadius: "6px",
+                            fontSize: "15px",
+                            fontWeight: "600",
+                            lineHeight: "22px",
+                            display: "flex",
+                            alignItems: "center",
+                            marginRight: "1rem"
+
+                        }} className="bg-white text-blue-600">
                             Sign up
                         </button>
-                        <button className="bg-white text-blue-500 font-semibold py-2 px-4 rounded-md">
+                        <button style={{
+                            width: "80px",
+                            height: "46px",
+                            padding: "12px 18px",
+                            gap: "6px",
+                            borderRadius: "6px",
+                            fontSize: "15px",
+                            fontWeight: "600",
+                            lineHeight: "22px",
+                            display: "flex",
+                            alignItems: "center"
+
+                        }} className="bg-blue-400 text-white">
                             Log in
                         </button>
                     </div>
-                    <div className="flex flex-wrap justify-center">
-                        <div className="flex items-center mb-4 md:mb-0 mr-4 md:mr-8">
-                            <FaSlack size={40} className="text-white" />
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 justify-center">
+                        <div className="flex items-center bg-blue-500 p-4 rounded-lg">
+                            <SiTwilio size={32} className="text-white mr-2" />
+                            <span className="text-white">Twilio</span>
                         </div>
-                        <div className="flex items-center mb-4 md:mb-0 mr-4 md:mr-8">
-                            <FaGoogle size={40} className="text-white" />
+                        <div className="flex items-center bg-blue-500 p-4 rounded-lg">
+                            <FaSlack size={32} className="text-white mr-2" />
+                            <span className="text-white">Slack</span>
                         </div>
-                        <div className="flex items-center mb-4 md:mb-0 mr-4 md:mr-8">
-                            <FaPaypal size={40} className="text-white" />
+                        <div className="flex items-center bg-blue-500 p-4 rounded-lg">
+                            <FaGoogle size={32} className="text-white mr-2" />
+                            <span className="text-white">Google</span>
                         </div>
-                        <div className="flex items-center mb-4 md:mb-8 md:order-first">
-                            <FaPinterest size={40} className="text-white" />
+                        <div className="flex items-center bg-blue-500 p-4 rounded-lg">
+                            <FaPaypal size={32} className="text-white mr-2" />
+                            <span className="text-white">PayPal</span>
                         </div>
-                        <div className="flex items-center mb-4 md:mb-8 md:order-2">
-                            <FaMailchimp size={40} className="text-white" />
+                        <div className="hidden md:flex items-center bg-blue-500 p-4 rounded-lg md:row-start-2 md:row-end-3">
+                            <FaPinterest size={32} className="text-white mr-2" />
+                            <span className="text-white">Pinterest</span>
+                        </div>
+                        <div className="hidden md:flex items-center bg-blue-500 p-4 rounded-lg md:row-start-3 md:row-end-3">
+                            <FaMailchimp size={32} className="text-white mr-2" />
+                            <span className="text-white">Mailchimp</span>
                         </div>
                     </div>
+
+
+
                 </div>
             </div>
 
