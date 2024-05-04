@@ -1,11 +1,12 @@
 import mongoose from "mongoose";
 
 const contactSchema = new mongoose.Schema({
-  name: String,
+  firstName: String,
   email: String,
-  phone: Number,
+  phoneNumber: Number,
   message: String,
-});
+}, { timestamps: true });
+
 
 const contactModel = mongoose.model("contact", contactSchema);
 

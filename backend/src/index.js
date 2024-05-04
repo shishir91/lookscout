@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import contactRoute from "./routes/contactRoute.js";
 import "dotenv/config";
 import bodyParser from "body-parser";
+import cors from "cors"
 
 const app = express();
 // app.use(express.json());
@@ -10,6 +11,12 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+app.use(
+  cors({
+      origin: "http://localhost:3000",
+      credentials: true, 
+  })
+);
 
 app.use("/contact", contactRoute);
 
