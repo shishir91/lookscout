@@ -19,7 +19,7 @@ const Contact = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8000/contact/addContact",
+        "https://lookscout-api-ccr.vercel.app/contact/addContact",
         formData
       );
       console.log("Response:", response.data);
