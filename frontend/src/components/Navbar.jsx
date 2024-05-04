@@ -5,8 +5,10 @@ import { MdProductionQuantityLimits } from "react-icons/md";
 import { GrResources } from "react-icons/gr";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   // State to store the current screen width
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   // State and function to toggle visibility of submenu
@@ -40,39 +42,62 @@ const Navbar = () => {
       return (
         <nav className="flex items-center justify-between p-8 border-b-2 h-20">
           <div className="flex items-center pl-40">
-            <a href="#" className="mr-6">
-              <img src={logo} alt="Logo" className="h-7 w-36" /> {/* Render logo as an image */}
+            <a href="/" className="mr-6">
+              <img src={logo} alt="Logo" className="h-7 w-36" />{" "}
+              {/* Render logo as an image */}
             </a>
             <ul className="flex space-x-6 pl-10">
               <li>
-                <a href="#" className="font-semibold font-inter text-base leading-22">Home</a>
+                <a
+                  href="/"
+                  className="font-semibold font-inter text-base leading-22"
+                >
+                  Home
+                </a>
               </li>
               <li>
-                <a href="#" className="font-semibold font-inter text-base leading-22">Our Products</a>
+                <a
+                  href="#"
+                  className="font-semibold font-inter text-base leading-22"
+                >
+                  Our Products
+                </a>
               </li>
               <li>
                 {/* Dropdown for Resources */}
                 <select className="font-semibold font-inter text-base leading-22">
-                  <option value="" disabled defaultValue hidden>Resources</option> {/* Use defaultValue instead of selected */}
+                  <option value="" disabled defaultValue hidden>
+                    Resources
+                  </option>{" "}
+                  {/* Use defaultValue instead of selected */}
                   <option value="resource1">Resource</option>
                   <option value="resource2">Resource</option>
                   <option value="resource3">Resource</option>
                 </select>
               </li>
               <li>
-                <a href="#" className="font-semibold font-inter text-base leading-22">Contacts</a>
+                <a
+                  href="/contact"
+                  className="font-semibold font-inter text-base leading-22"
+                >
+                  Contacts
+                </a>
               </li>
             </ul>
           </div>
           <div className="flex items-center pr-20">
             {/* Sign Up and Login Links */}
-            <a href="#" className="font-inter text-base font-semibold leading-22 text-blue-600 px-4">Sign Up</a>
+            <a
+              href="#"
+              className="font-inter text-base font-semibold leading-22 text-blue-600 px-4"
+            >
+              Sign Up
+            </a>
             <button className="font-inter text-base font-semibold leading-22 bg-blue-600 text-white px-3 py-2 rounded-md">
               Log In
             </button>
           </div>
         </nav>
-
       );
     } else if (screenWidth >= 768 && screenWidth < 1024) {
       // Tablet navbar with submenu
@@ -135,10 +160,9 @@ const Navbar = () => {
                         Resource 3
                       </li>
                     </ul>
-                    <li className="font-semibold font-inter text-base flex items-center hover:bg-gray-200 rounded-md transition duration-300 p-1">
+                    <li onClick={()=>navigate("/contact")} className="font-semibold font-inter text-base flex items-center hover:bg-gray-200 rounded-md transition duration-300 p-1">
                       <MdOutlinePermContactCalendar className="mr-2" />
-                      <button>Contacts
-                      </button>
+                      Contacts
                     </li>
                   </ul>
 
