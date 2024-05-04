@@ -8,6 +8,7 @@ import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 // import { FaSlack, FaGoogle, FaPaypal, FaPinterest, FaMailchimp } from 'react-icons/fa';
 import { FaSlack, FaGoogle, FaPaypal, FaPinterest, FaMailchimp } from 'react-icons/fa';
 import { SiTwilio } from "react-icons/si";
+import Bottom from './Bottom';
 
 const Info = () => {
 
@@ -70,13 +71,78 @@ const Info = () => {
         switch (screenSize) {
             case 'mobile':
                 return (
-                    <div className='px-16'>
+                    <div className=' mt-10'>
+                        <div className=" p-6">
+                            <h2 className="text-3xl font-semibold mb-4">Demonstrate branding consequently think outside</h2>
+                            <ul className="list-disc pl-6 mb-4 font-normal">
+                                <li>Enterprise-grade security</li>
+                                <li>99.9% guaranteed uptime SLA</li>
+                                <li>Designated customer success team</li>
+                            </ul>
+                            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Start now
+                            </button>
+                        </div>
+
+                        <div className="p-6">
+                            <div className="relative" style={{ width: "343px", height: "343px" }}>
+                                <img
+                                    src={icon7}
+                                    alt="Workspace"
+                                    className="mb-4 w-80 h-80"
+                                    style={{ objectFit: "cover", borderRadius: "8px" }}
+                                />
+                                <div className="absolute bottom-0 left-0 flex justify-center items-center w-full" >
+                                    <div className="bg-white rounded-lg shadow-md p-6 mb-5" style={{ width: "280px", height: "120px" }}>
+                                        <div className="flex flex-col items-center">
+                                            <h3 className="text-xl font-bold mb-4">Check Us Out</h3>
+                                            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                                Get Started Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
 
                     </div>
                 );
             case 'tablet':
                 return (
-                    <div className='px-16'>
+                    <div className='px-16 mt-10'>
+                        <div className=" p-6">
+                            <h2 className="text-3xl font-semibold mb-4">Demonstrate branding consequently think outside</h2>
+                            <ul className="list-disc pl-6 mb-4 font-normal">
+                                <li>Enterprise-grade security</li>
+                                <li>99.9% guaranteed uptime SLA</li>
+                                <li>Designated customer success team</li>
+                            </ul>
+                            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Start now
+                            </button>
+                        </div>
+
+                        <div className=" p-6">
+                            <div className="relative" style={{ width: "704px", height: "460px" }}>
+                                <img
+                                    src={icon7}
+                                    alt="Workspace"
+                                    className="mb-4"
+                                    style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "8px" }}
+                                />
+                                <div className="absolute bottom-0 left-0 w-full flex justify-center items-center">
+                                    <div className="bg-white rounded-lg shadow-md p-6 mb-5" style={{ width: "30rem", height: "12rem" }}>
+                                        <div className="flex flex-col items-center">
+                                            <h3 className="text-xl font-bold mb-20">Check Us Out</h3>
+                                            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                                Get Started Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 );
@@ -263,79 +329,7 @@ const Info = () => {
 
             {/* Bottom Signup Login */}
 
-            <div className="bg-blue-500 py-16">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-sm font-semibold text-white text-center mb-8">
-                        1% OF THE INDUSTRY
-                    </h2>
-                    <p className="text-4xl font-semibold text-white text-center mb-12">
-                        Welcome to your new digital reality that <br />which will rock your world truly at all.
-                    </p>
-                    <div className="flex flex-col sm:flex-row justify-center items-center mb-8">
-                        <button style={{
-                            width: "91px",
-                            height: "46px",
-                            padding: "12px 18px",
-                            gap: "6px",
-                            borderRadius: "6px",
-                            fontSize: "15px",
-                            fontWeight: "600",
-                            lineHeight: "22px",
-                            display: "flex",
-                            alignItems: "center",
-                            marginRight: "1rem"
-
-                        }} className="bg-white text-blue-600">
-                            Sign up
-                        </button>
-                        <button style={{
-                            width: "80px",
-                            height: "46px",
-                            padding: "12px 18px",
-                            gap: "6px",
-                            borderRadius: "6px",
-                            fontSize: "15px",
-                            fontWeight: "600",
-                            lineHeight: "22px",
-                            display: "flex",
-                            alignItems: "center"
-
-                        }} className="bg-blue-400 text-white">
-                            Log in
-                        </button>
-                    </div>
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 justify-center">
-                        <div className="flex items-center bg-blue-500 p-4 rounded-lg">
-                            <SiTwilio size={32} className="text-white mr-2" />
-                            <span className="text-white">Twilio</span>
-                        </div>
-                        <div className="flex items-center bg-blue-500 p-4 rounded-lg">
-                            <FaSlack size={32} className="text-white mr-2" />
-                            <span className="text-white">Slack</span>
-                        </div>
-                        <div className="flex items-center bg-blue-500 p-4 rounded-lg">
-                            <FaGoogle size={32} className="text-white mr-2" />
-                            <span className="text-white">Google</span>
-                        </div>
-                        <div className="flex items-center bg-blue-500 p-4 rounded-lg">
-                            <FaPaypal size={32} className="text-white mr-2" />
-                            <span className="text-white">PayPal</span>
-                        </div>
-                        <div className="hidden md:flex items-center bg-blue-500 p-4 rounded-lg md:row-start-2 md:row-end-3">
-                            <FaPinterest size={32} className="text-white mr-2" />
-                            <span className="text-white">Pinterest</span>
-                        </div>
-                        <div className="hidden md:flex items-center bg-blue-500 p-4 rounded-lg md:row-start-3 md:row-end-3">
-                            <FaMailchimp size={32} className="text-white mr-2" />
-                            <span className="text-white">Mailchimp</span>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
+            <Bottom />
 
         </>
     )

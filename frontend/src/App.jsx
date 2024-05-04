@@ -8,7 +8,8 @@ const App = () => {
   return (
     <div>
       <Navbar/>
-      <Contact/>
+      {/* <Contact/> */}
+      <Body/>
       <Footer />
     </div>
   );

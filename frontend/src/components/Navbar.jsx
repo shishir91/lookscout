@@ -40,42 +40,39 @@ const Navbar = () => {
       return (
         <nav className="flex items-center justify-between p-8 border-b-2 h-20">
           <div className="flex items-center pl-40">
-            <img src={logo} alt="Logo" className="h-7 w-36 mr-6" />{" "}
-            {/* Render logo as an image */}
+            <a href="#" className="mr-6">
+              <img src={logo} alt="Logo" className="h-7 w-36" /> {/* Render logo as an image */}
+            </a>
             <ul className="flex space-x-6 pl-10">
-              <li className="w-43 h-22 font-semibold font-inter text-base leading-22">
-                Home
+              <li>
+                <a href="#" className="font-semibold font-inter text-base leading-22">Home</a>
               </li>
-              <li className="w-43 h-22 font-semibold font-inter text-base leading-22">
-                Our Products
+              <li>
+                <a href="#" className="font-semibold font-inter text-base leading-22">Our Products</a>
               </li>
-              <li className="w-43 h-22 font-semibold font-inter text-base leading-22">
+              <li>
                 {/* Dropdown for Resources */}
-                <select className="w-43 h-22 font-semibold font-inter text-base leading-22">
-                  <option value="" disabled defaultValue hidden>
-                    Resources
-                  </option>{" "}
-                  {/* Use defaultValue instead of selected */}
-                  <option value="resource1">Resource </option>
-                  <option value="resource2">Resource </option>
-                  <option value="resource3">Resource </option>
+                <select className="font-semibold font-inter text-base leading-22">
+                  <option value="" disabled defaultValue hidden>Resources</option> {/* Use defaultValue instead of selected */}
+                  <option value="resource1">Resource</option>
+                  <option value="resource2">Resource</option>
+                  <option value="resource3">Resource</option>
                 </select>
               </li>
-              <li className="w-43 h-22 font-semibold font-inter text-base leading-22">
-                Contacts
+              <li>
+                <a href="#" className="font-semibold font-inter text-base leading-22">Contacts</a>
               </li>
             </ul>
           </div>
           <div className="flex items-center pr-20">
             {/* Sign Up and Login Links */}
-            <button className="font-inter text-base font-semibold leading-22 text-blue-600 px-4">
-              Sign Up
-            </button>
+            <a href="#" className="font-inter text-base font-semibold leading-22 text-blue-600 px-4">Sign Up</a>
             <button className="font-inter text-base font-semibold leading-22 bg-blue-600 text-white px-3 py-2 rounded-md">
               Log In
             </button>
           </div>
         </nav>
+
       );
     } else if (screenWidth >= 768 && screenWidth < 1024) {
       // Tablet navbar with submenu
