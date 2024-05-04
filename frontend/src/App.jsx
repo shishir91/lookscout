@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "./Components/Footer";
-import Navbar from "./Components/Navbar";
-import Body from "./Components/Body";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Body from "./components/Body";
 
 const App = () => {
   return (
