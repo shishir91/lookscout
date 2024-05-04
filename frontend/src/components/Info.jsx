@@ -84,8 +84,7 @@ const Info = () => {
                 return (
                     <div className="flex flex-col md:flex-row items-center justify-center">
                         <div className="md:w-1/2 p-6">
-                            <h2 className="text-2xl font-bold mb-4">Demonstrate branding</h2>
-                            <h2 className="text-2xl font-bold mb-4">consequently think outside</h2>
+                            <h2 className="text-3xl font-bold mb-4 w-96">Demonstrate branding consequently think outside</h2>
                             <p className="mb-4">
                                 Velit purus egestas tellus pharetra. Mattis eget sed faucibus magna
                                 vitae nisi pellentesque a diam tincidunt. Aliquet malesuada tellus
@@ -110,11 +109,9 @@ const Info = () => {
                                     style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "8px" }}
                                 />
                                 <div className="absolute bottom-0 left-0 w-full flex justify-center items-center">
-                                    <div className="bg-white rounded-lg shadow-md p-6 mb-5" style={{ width: "30rem", height: "10rem" }}>
+                                    <div className="bg-white rounded-lg shadow-md p-6 mb-5" style={{ width: "30rem", height: "12rem" }}>
                                         <div className="flex flex-col items-center">
-                                            <h3 className="text-xl font-bold mb-4">Check Us Out</h3>
-                                            <h1>Test</h1>
-                                            <h1>Test</h1>
+                                            <h3 className="text-xl font-bold mb-20">Check Us Out</h3>
                                             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                                                 Get Started Now
                                             </button>

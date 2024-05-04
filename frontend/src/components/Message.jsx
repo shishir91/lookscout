@@ -211,7 +211,7 @@ const Message = () => {
         <>
             <div className="flex items-center justify-center">
                 <div className="w-full md:w-3/4 lg:w-1/2 xl:w-2/5 p-4">
-                    <p className="lg:text-lg md:text-3xl sm:text-2xl  font-bold leading-40 tracking-tighter text-center">
+                    <p className="lg:text-3xl md:text-3xl sm:text-2xl  font-bold leading-40 tracking-tighter text-center">
                         Messaging for all
                     </p>
                 </div>
